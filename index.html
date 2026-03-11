@@ -1,58 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CyberSec Institute</title>
+
+<title>CyberSec Institute | Cybersecurity & Compliance Training</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-font-family: Arial, sans-serif;
-background:#0b0f1a;
+margin:0;
+font-family:Inter;
+background:#0a0f1c;
 color:white;
-text-align:center;
-padding:50px;
 }
 
-h1{
-font-size:48px;
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#0a0f1c;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.logo{
+font-weight:700;
+font-size:22px;
 color:#00e5ff;
 }
 
-.tagline{
-font-size:22px;
-margin-top:10px;
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+opacity:0.8;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+.hero{
+padding:120px 10%;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#00e5ff;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.8;
+max-width:700px;
+margin:auto;
 }
 
 .button{
 display:inline-block;
-margin-top:30px;
-padding:15px 30px;
+margin-top:40px;
+padding:15px 35px;
 background:#00e5ff;
 color:black;
-text-decoration:none;
 border-radius:6px;
-font-weight:bold;
+text-decoration:none;
+font-weight:600;
 }
+
+.section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:60px;
+}
+
+.courses{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#12182b;
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#18213b;
+}
+
+.card h3{
+color:#00e5ff;
+}
+
+.corporate{
+background:#12182b;
+padding:60px;
+border-radius:10px;
+text-align:center;
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+}
+
+.about-text{
+flex:1;
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:0.6;
+border-top:1px solid rgba(255,255,255,0.05);
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>CyberSec Institute</h1>
+<header>
 
-<p class="tagline">
-Cybersecurity & Compliance Training
+<div class="logo">CyberSec Institute</div>
+
+<nav>
+<a href="#courses">Courses</a>
+<a href="#corporate">Corporate Training</a>
+<a href="#about">About</a>
+<a href="mailto:carlos@cybersecinstitute.lat">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Cybersecurity & <span>Compliance Training</span></h1>
+
+<p>
+Practical cybersecurity training for professionals and organizations across Latin America.
+Learn real-world skills in network security, cloud security and compliance.
+</p>
+
+<a class="button" href="mailto:carlos@cybersecinstitute.lat">Request Information</a>
+
+</section>
+
+
+<section class="section" id="courses">
+
+<h2 class="section-title">Professional Courses</h2>
+
+<div class="courses">
+
+<div class="card">
+<h3>CCNA Bootcamp</h3>
+<p>Intensive preparation for Cisco CCNA certification with hands-on labs.</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity Fundamentals</h3>
+<p>Learn core security concepts, threats, defenses and security architecture.</p>
+</div>
+
+<div class="card">
+<h3>ISO 27001 Foundations</h3>
+<p>Understand information security management systems and compliance.</p>
+</div>
+
+<div class="card">
+<h3>PCI DSS Compliance</h3>
+<p>Security and compliance training for payment environments.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="corporate">
+
+<h2 class="section-title">Corporate Training</h2>
+
+<div class="corporate">
+
+<h3>Security Awareness Training</h3>
+
+<p>
+Custom cybersecurity awareness programs for companies, retail, banks and technology teams.
+</p>
+
+<br>
+
+<p>
+
+• Phishing awareness  
+• Fraud prevention  
+• Secure remote work  
+• Compliance training  
+
+</p>
+
+<a class="button" href="mailto:carlos@cybersecinstitute.lat">Schedule a Session</a>
+
+</div>
+
+</section>
+
+
+<section class="section" id="about">
+
+<h2 class="section-title">About the Instructor</h2>
+
+<div class="about">
+
+<div class="about-text">
+
+<h3>Carlos Pacheco</h3>
+
+<p>
+Cybersecurity professional with experience in security architecture, compliance, and cloud security.
 </p>
 
 <p>
-Professional training in cybersecurity, compliance and risk management.
+Certifications include CISM, CCNP, CCSP and ISO27001 expertise.
 </p>
 
-<a class="button" href="mailto:info@cybersecinstitute.lat">
-Contact Us
-</a>
+<p>
+CyberSec Institute was created to provide practical, real-world cybersecurity education for professionals and organizations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+CyberSec Institute © 2026  
+Cybersecurity & Compliance Training
+
+</footer>
 
 </body>
+
 </html>
