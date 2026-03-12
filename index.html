@@ -4,9 +4,11 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>CyberSec Institute | Entrenamiento en Ciberseguridad</title>
+
+<link rel="icon" type="image/png" href="logo-shield.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -14,10 +16,12 @@
 
 body{
 margin:0;
-font-family:Inter;
-background:#0a0f1c;
+font-family:Inter, sans-serif;
+background:#0f1724;
 color:white;
 }
+
+/* HEADER */
 
 header{
 display:flex;
@@ -27,23 +31,16 @@ padding:20px 8%;
 border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-font-weight:700;
-font-size:20px;
-}
-
 .logo img{
-height:40px;
+height:55px;
 }
 
 nav a{
-margin-left:25px;
+margin-left:30px;
 text-decoration:none;
 color:white;
 opacity:0.8;
+font-weight:500;
 }
 
 nav a:hover{
@@ -51,22 +48,26 @@ opacity:1;
 }
 
 .lang-btn{
+margin-left:20px;
 background:#00e5ff;
 border:none;
 padding:8px 14px;
-border-radius:5px;
+border-radius:6px;
 cursor:pointer;
 font-weight:600;
-margin-left:20px;
 }
+
+/* HERO */
 
 .hero{
 padding:120px 8%;
 text-align:center;
+background: radial-gradient(circle at top, #16223a, #0f1724);
 }
 
 .hero h1{
-font-size:55px;
+font-size:54px;
+margin-bottom:20px;
 }
 
 .hero span{
@@ -91,6 +92,8 @@ text-decoration:none;
 font-weight:600;
 }
 
+/* SECTIONS */
+
 .section{
 padding:100px 8%;
 }
@@ -101,6 +104,8 @@ font-size:40px;
 margin-bottom:60px;
 }
 
+/* COURSES */
+
 .courses{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -108,7 +113,7 @@ gap:30px;
 }
 
 .card{
-background:#12182b;
+background:#161f33;
 padding:30px;
 border-radius:10px;
 transition:0.3s;
@@ -116,22 +121,33 @@ transition:0.3s;
 
 .card:hover{
 transform:translateY(-6px);
-background:#18213b;
+background:#1c2745;
 }
 
 .card h3{
 color:#00e5ff;
 }
 
+/* CORPORATE */
+
+.corporate-box{
+background:#161f33;
+padding:50px;
+border-radius:10px;
+text-align:center;
+}
+
+/* ABOUT */
+
 .about{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:60px;
 align-items:center;
 }
 
-.instructor-box{
-background:#12182b;
+.instructor-card{
+background:#161f33;
 padding:40px;
 border-radius:10px;
 }
@@ -149,6 +165,8 @@ margin:5px;
 font-size:14px;
 }
 
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:40px;
@@ -156,10 +174,18 @@ opacity:0.6;
 border-top:1px solid rgba(255,255,255,0.05);
 }
 
+/* MOBILE */
+
 @media(max-width:900px){
+
 .about{
 grid-template-columns:1fr;
 }
+
+.hero h1{
+font-size:38px;
+}
+
 }
 
 </style>
@@ -171,8 +197,7 @@ grid-template-columns:1fr;
 <header>
 
 <div class="logo">
-<img src="logo.png">
-CyberSec Institute
+<img src="logo.png" alt="CyberSec Institute">
 </div>
 
 <nav>
@@ -180,6 +205,7 @@ CyberSec Institute
 <a href="#courses">Cursos</a>
 <a href="#corporate">Empresas</a>
 <a href="#about">Instructor</a>
+<a href="mailto:carlos@cybersecinstitute.lat">Contacto</a>
 
 <button class="lang-btn" onclick="toggleLanguage()">EN</button>
 
@@ -190,13 +216,15 @@ CyberSec Institute
 
 <section class="hero">
 
-<h1>Entrenamiento en <span>Ciberseguridad</span> y Cumplimiento</h1>
+<h1>Entrenamiento en <span>Ciberseguridad</span> y Compliance</h1>
 
 <p>
-Capacitación práctica para profesionales y empresas en ciberseguridad, redes y compliance.
+Capacitación práctica para profesionales y empresas en ciberseguridad, redes, cloud security y cumplimiento regulatorio.
 </p>
 
-<a class="button" href="mailto:carlos@cybersecinstitute.lat">Solicitar Información</a>
+<a class="button" href="mailto:carlos@cybersecinstitute.lat">
+Solicitar información
+</a>
 
 </section>
 
@@ -208,23 +236,43 @@ Capacitación práctica para profesionales y empresas en ciberseguridad, redes y
 <div class="courses">
 
 <div class="card">
-<h3>Bootcamp CCNA</h3>
-<p>Preparación intensiva para certificación Cisco CCNA con laboratorios prácticos.</p>
+
+<h3>CCNA Bootcamp</h3>
+
+<p>
+Preparación intensiva para certificación Cisco CCNA con laboratorios prácticos de networking.
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>Fundamentos de Ciberseguridad</h3>
-<p>Aprende amenazas, defensas, arquitectura de seguridad y gestión de riesgos.</p>
+
+<p>
+Conceptos clave de seguridad, amenazas, arquitectura de seguridad y gestión de riesgos.
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>ISO 27001</h3>
-<p>Implementación y gestión de sistemas de seguridad de información.</p>
+
+<p>
+Implementación de sistemas de gestión de seguridad de información y compliance.
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>PCI DSS</h3>
-<p>Seguridad y cumplimiento para entornos de pago.</p>
+
+<p>
+Seguridad y cumplimiento para entornos de pagos y comercio electrónico.
+</p>
+
 </div>
 
 </div>
@@ -236,22 +284,25 @@ Capacitación práctica para profesionales y empresas en ciberseguridad, redes y
 
 <h2 class="section-title">Entrenamiento para Empresas</h2>
 
-<div class="instructor-box">
+<div class="corporate-box">
 
 <p>
 
-Programas especializados para empresas en Latinoamérica:
+Programas de capacitación especializados para organizaciones en Latinoamérica.
 
 </p>
 
-<ul>
+<br>
 
-<li>Security Awareness</li>
-<li>Prevención de Fraude</li>
-<li>Phishing Simulation</li>
-<li>Compliance y gestión de riesgos</li>
+<p>
 
-</ul>
+• Security Awareness  
+• Prevención de fraude  
+• Simulación de phishing  
+• Gestión de riesgos  
+• Cumplimiento regulatorio  
+
+</p>
 
 <a class="button" href="mailto:carlos@cybersecinstitute.lat">
 Solicitar entrenamiento
@@ -274,15 +325,13 @@ Solicitar entrenamiento
 
 <p>
 
-Especialista en ciberseguridad con experiencia en arquitectura de seguridad,
-gestión de riesgos, compliance y seguridad en la nube.
+Especialista en ciberseguridad con experiencia en arquitectura de seguridad, gestión de riesgos, compliance y seguridad en la nube.
 
 </p>
 
 <p>
 
-CyberSec Institute fue creado para ofrecer capacitación práctica basada
-en experiencias reales en la industria.
+CyberSec Institute fue creado para ofrecer capacitación práctica basada en experiencias reales en la industria.
 
 </p>
 
@@ -298,23 +347,22 @@ en experiencias reales en la industria.
 
 </div>
 
-<div class="instructor-box">
+<div class="instructor-card">
 
-<h3>Experiencia</h3>
+<h3>Experiencia Profesional</h3>
 
 <p>
 
 • Arquitectura de seguridad empresarial  
-• Cumplimiento regulatorio  
-• Seguridad en cloud  
-• Gestión de riesgos  
+• Seguridad en entornos cloud  
+• Gestión de riesgos y compliance  
+• Seguridad de redes y sistemas  
 
 </p>
 
 <p>
 
-Entrenamiento para profesionales de TI,
-equipos de seguridad y organizaciones.
+Entrenamiento especializado para profesionales de TI, equipos de seguridad y organizaciones.
 
 </p>
 
